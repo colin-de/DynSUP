@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Long-term Effective Any Point Tracking for Visual Odometry">
-  <meta name="keywords" content="LEAPVO, visual odometry">
+        content="Dynamic Gaussian Splatting from An Unposed Image Pair">
+  <meta name="keywords" content="DynSUP, Dynamic Pose-free Gaussian Splatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LEAP-VO: Long-term Effective Any Point Tracking for Visual Odometry</title>
+  <title>DynSUP: Dynamic Gaussian Splatting from An Unposed Image Pair</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -46,66 +46,72 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">LEAP-VO: Long-term Effective Any Point Tracking </br> for Visual Odometry</h1>
-          <div class="cvpr2024" style="margin-top: 10px; margin-bottom: 20px;">
-            <h2 class="title is-4">CVPR 2024</h2>
+          <h1 class="title is-2 publication-title">DynSUP: Dynamic Gaussian Splatting </br> from An Unposed Image Pair 
+            <!-- Long-term Effective Any Point Tracking </br> for Visual Odometry</h1> -->
+          <div class="arXiv 2024" style="margin-top: 10px; margin-bottom: 20px;">
+            <h2 class="title is-4">arXiv 2024</h2>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
+              <a href="https://colin-de.github.io/">Weihang Li</a><sup>1,3</sup>,</span>
+            <span class="author-block">
               <a href="https://chiaki530.github.io/">Weirong Chen</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://clthegoat.github.io/">Le Chen</a><sup>3</sup>,</span>
+              <a href="https://shenhanqian.github.io/">Shenhan Qian</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://rui2016.github.io/">Rui Wang</a><sup>4</sup>,
+              Jiajie Chen</a><sup>1,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://cvg.cit.tum.de/members/cremers">Daniel Cremers</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a><sup>4</sup>
+              <a href="https://sites.google.com/view/haoangli/homepage">Haoang Li</a><sup>3</sup>
             </span>           
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>TU Munich</span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>1</sup>Technical University of Munich</span>&nbsp;&nbsp;&nbsp;
             <span class="author-block"><sup>2</sup>Munich Center for Machine Learning</span>&nbsp;&nbsp;&nbsp;
-            <span class="author-block"><sup>3</sup>MPI for Intelligent Systems</span>&nbsp;&nbsp;&nbsp;
-            <span class="author-block"><sup>4</sup>Microsoft</span>
+            <span class="author-block"><sup>3</sup>The Hong Kong University of Science and Technology (Guangzhou)</span>&nbsp;&nbsp;&nbsp;
           </div>
 
           
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="static/files/1435_IEEE_verified.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (Coming Soon)</span>
                 </a>
-              </span>
+              </span> -->
+              <!-- <span class="link-block">
+                <a class="external-link button is-normal is-rounded" 
+                   style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span> -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2401.01887"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark"
+                   style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Supp Link. -->
-              <!-- <span class="link-block">
-                <a href="static/pdfs/supp.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supp</span>
-                </a>
-              </span> -->
+
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/chiaki530/leapvo"
+                <a href="https://github.com/colin-de/DynSUP"
                 class="external-link button is-normal is-rounded is-dark">
+                <!-- style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;"> -->
                <span class="icon">
                    <i class="fab fa-github"></i>
                </span>
@@ -114,8 +120,9 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=qtGsROYwdm4"
-                    class="external-link button is-normal is-rounded is-dark">
+                <a href=""
+                    class="external-link button is-normal is-rounded is-dark"
+                    style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
@@ -125,12 +132,13 @@
               
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="static/files/CVPR24_poster_leapvo_final.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark"
+                   style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Poster</span>
+                  <span>Datasets</span>
                   </a>
               </span>
             </div>
@@ -142,20 +150,28 @@
   </div>
 </section>
 
-
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <!-- Input Image Pair Section -->
+      <div class="input-image-pair has-text-centered" style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <img src="static/images/teaser_input_img_1.png" alt="Input Image 1" style="max-width: 45%; border: 1px solid #ccc; border-radius: 5px;">
+          <img src="static/images/teaser_input_img_2.png" alt="Input Image 2" style="max-width: 45%; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <h3 class="subtitle" style="margin-top: 10px;">Input Image Pair</h3>
+      </div>
+
+      <!-- Video Section -->
       <video id="teaser" autoplay muted loop playsinline controls width="100%">
-        <source src="static/videos/sintel_market_5.mp4" type="video/mp4">
+        <source src="static/videos/teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <strong>LEAP-VO</strong> is a robust visual odometry system that leverages <strong>temporal context with long-term point tracking</strong> to achieve motion estimation, occlusion handling, and track probability modeling.
+        Given two images captured at distinct moments with unknown poses in a dynamic environment, <strong>DynSUP</strong> can fit dynamic Gaussian splatting and then synthesize a new image from a novel viewpoint at a different time.
       </h2>
     </div>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -165,16 +181,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Visual odometry estimates the motion of a moving camera based on visual input. 
-            Existing methods, mostly focusing on two-view point tracking, often ignore the rich temporal context in the image sequence, 
-            thereby overlooking the global motion patterns and providing no assessment of the full trajectory reliability. 
-            These shortcomings hinder performance in scenarios with occlusion, dynamic objects, 
-            and low-texture areas. To address these challenges, we present the Long-term Effective Any Point Tracking (LEAP) module. 
-            LEAP innovatively combines visual, inter-track, and temporal cues with mindfully selected anchors for dynamic track estimation. 
-            Moreover, LEAP's temporal probabilistic formulation integrates distribution updates into a learnable iterative refinement module to reason about point-wise uncertainty.
-            Based on these traits, we develop LEAP-VO, a robust visual odometry system adept at handling occlusions and dynamic scenes. 
-            Our mindful integration showcases a novel practice by employing long-term point tracking as the front-end. 
-            Extensive experiments demonstrate that the proposed pipeline significantly outperforms existing baselines across various visual odometry benchmarks.
+            Recent advances in 3D Gaussian Splatting have shown promising results. Existing methods typically assume static scenes and/or multiple images with prior poses. 
+            Dynamics, sparse views, and unknown poses significantly increase the problem complexity due to insufficient geometric constraints. 
+            To overcome this challenge, we propose a method that can use only two images without prior poses to fit Gaussians in dynamic environments. 
+            To achieve this, we introduce two technical contributions. First, we propose an object-level two-view bundle adjustment. This strategy decomposes dynamic scenes into piece-wise rigid components, and jointly estimates the camera pose and motions of dynamic objects. 
+            Second, we design an SE(3) field-driven Gaussian training method. It enables fine-grained motion modeling through learnable per-Gaussian transformations. Our method leads to high-fidelity novel view synthesis of dynamic scenes while accurately preserving temporal consistency and object motion. 
+            Experiments on both synthetic and real-world datasets demonstrate that our method significantly outperforms state-of-the-art approaches designed for the cases of static environments, multiple images, and/or known poses.
           </p>
         </div>
       </div>
@@ -207,30 +219,21 @@
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Method</h2>
-        <!-- <h3 class="title is-4">LEAP Front-end</h3> -->
-        <div class="content has-text-justified">
-          <p>
-            <strong>LEAP Front-end:</strong> After extracting image feature maps, selected anchors assist in tracking. 
-            The queries and anchors are processed by a refiner to iteratively update states, aggregating channel, inter-track, and temporal information. 
-            The LEAP tracker outputs trajectory distribution, visibility, and dynamic track labels.
-          </p>
-        </div>
-        <img src="./static/images/leap_frontend.png"
+
+        <img src="./static/images/pipeline.png"
                   class="teaser-fig"
-                  width="70%"
+                  width="100%"
                   alt="teaser-fig."/>
-        <!-- <h3 class="title is-4">LEAP VO</h3> -->
+
         <div class="content has-text-justified">
                     <p>
-                      <strong>LEAP-VO:</strong> Given a new image, the feature extractor extracts new keypoints from the incoming image. 
-                      Then, all the keypoints are tracked across all other frames within the current LEAP window, followed by a track filtering step to remove outliers. 
-                      Finally, the local BA module is used on the current BA window to update the camera poses and 3D positions of the extracted keypoints. 
+                      <strong>Overview:</strong> Given two unposed images, we first perform Object-level Dense Bundle Adjustment to estimate initial camera poses and object motions by decomposing the scene into piece-wise rigid components. 
+                      The dense 3D Gaussian primitives are initialized with per-object SE(3) transformations. 
+                      In the SE(3) Field-driven 3DGS stage, we jointly optimize the camera poses, per-Gaussian SE(3) transformations, and Gaussian parameters to reconstruct the dynamic scene. 
+                      The optimized SE(3) field captures fine-grained motion details while maintaining temporal consistency. 
+                      Finally, the dynamic scene is rendered using the optimized camera poses and SE(3) field to generate high-quality novel-view synthesis results.
                     </p>
                     </div>
-        <img src="./static/images/leap_vo.png"
-        class="teaser-fig"
-        alt="teaser-fig."/>
-
 
       </div>
     </div>
@@ -243,13 +246,10 @@
       <!-- Exp. -->
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <h2 class="title is-3">Qualitative Results</h2>
+          <h2 class="title is-3">Novel View Synthesis (Interpolation)</h2>
           <div class="content has-text-justified">
             <p>
-            Qualitative results for Visual Odometry on MPI-Sintel.
-            Upper left: image sample with static (green) point tracking. 
-            Lower left: image sample with dynamic (red) and uncertain (yellow) point tracking. 
-            Right: comparison with the state-of-the-art VO methods. 
+            Qualitative results for Novel View Synthesis on KITTI and Kubric datasets.
             </p>
           </div>
   
@@ -265,46 +265,41 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-fullbody">
             <video poster="" id="fullbody" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/sintel_ambush_5.mp4"
+              <source src="static/videos/demo_kitti_1.mp4"
                       type="video/mp4">
             </video>
           </div>
           <div class="item item-shiba">
             <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/sintel_cave_2.mp4"
+              <source src="static/videos/demo_kitti_2.mp4"
                       type="video/mp4">
             </video>
           </div>
           <div class="item item-shiba">
             <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/sintel_alley_2.mp4"
+              <source src="static/videos/demo_kitti_3.mp4"
                       type="video/mp4">
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" id="toby" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/sintel_market_5.mp4"
+              <source src="static/videos/demo_kubric_1.mp4"
                       type="video/mp4">
             </video>
           </div>
           <div class="item item-chair-tp">
             <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-              <source src="static/videos/sintel_temple_2.mp4"
+              <source src="static/videos/demo_kubric_2.mp4"
                       type="video/mp4">
             </video>
           </div>
           <div class="item item-chair-tp">
             <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-              <source src="static/videos/sintel_market_6.mp4"
+              <source src="static/videos/demo_kubric_3.mp4"
                       type="video/mp4">
             </video>
           </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/sintel_ambush_4.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
+
         </div>
       </div>
     </div>
@@ -315,32 +310,104 @@
     <div class="container is-max-desktop">
       <!-- Exp. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column">  
-          <h2 class="title is-3">Dynamic Track Estimation</h3>
+        <div class="column">
+          <h2 class="title is-3">Novel View Synthesis (Extrapolation)</h2>
           <div class="content has-text-justified">
             <p>
-              Visualization of dynamic track estimation on DAVIS, MPI-Sintel, and TartanAir-Shibuya.
-              Odd columns: all point trajectories. Even columns:  estimated dynamic point trajectories.
+            Visualization of our method with Novel View Synthesis (Extrapolation).
             </p>
           </div>
-          <img src="./static/images/dyn_combine.png"
-                    class="teaser-fig"
-                    alt="teaser-fig."/>
+  
         </div>
       </div>
       <!--/ Exp. -->
     </div>
-  </section>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="videos-grid">
+        <!-- Video 1 -->
+        <div class="video-item">
+          <video poster="" id="fullbody" autoplay playsinline controls muted loop>
+            <source src="static/videos/extra_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-item">
+          <video poster="" id="shiba" autoplay playsinline controls muted loop>
+            <source src="static/videos/extra_2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Exp. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Object-level Editing</h2>
+        <div class="content has-text-justified">
+          <p>
+            Visual demonstration of object-level editing.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Exp. -->
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+<div class="hero-body">
+  <div class="container">
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <div class="video-item">
+        <video poster="" id="fullbody" autoplay playsinline controls muted loop>
+          <source src="static/videos/obj_edit_1.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+  .videos-grid {
+    display: grid; /* Use Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamically adjust the number of columns */
+    gap: 16px; /* Add spacing between grid items */
+  }
+
+  .video-item {
+    max-width: 800px; /* Optional: Limit maximum width of each video */
+    margin: auto; /* Center grid items */
+  }
+
+  video {
+    width: 100%; /* Ensure video takes full width of container */
+    height: auto; /* Maintain aspect ratio */
+  }
+</style>
+
+
 
   <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@InProceedings{chen2024leap,
+    <!-- <pre><code>@InProceedings{chen2024leap,
       title={LEAP-VO: Long-term Effective Any Point Tracking for Visual Odometry},
       author={Chen, Weirong and Chen, Le and Wang, Rui and Pollefeys, Marc},
       journal={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
       year={2024}
-}</code></pre>
+    }</code></pre> -->
   </div>
 </section>
 
