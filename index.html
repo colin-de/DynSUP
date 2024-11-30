@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
@@ -24,6 +25,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
+  <link href="static/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -32,12 +35,21 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
+  <meta property="og:url" content="https://https://colin-de.github.io/DynSUP/" />
+  <meta property="og:title" content="DynSUP" />
 </head>
 <body>
 
@@ -46,11 +58,11 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">DynSUP: Dynamic Gaussian Splatting </br> from An Unposed Image Pair 
-            <!-- Long-term Effective Any Point Tracking </br> for Visual Odometry</h1> -->
+          <h1 class="title is-2 publication-title">DynSUP: Dynamic Gaussian Splatting </br> from An Unposed Image Pair</h1> 
           <div class="arXiv 2024" style="margin-top: 10px; margin-bottom: 20px;">
             <h2 class="title is-4">arXiv 2024</h2>
           </div>
+
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://colin-de.github.io/">Weihang Li</a><sup>1,3</sup>,</span>
@@ -96,8 +108,9 @@
                   <span>Paper (Coming Soon)</span>
                 </a>
               </span> -->
+
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2401.01887"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark"
                    style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
                   <span class="icon">
@@ -119,7 +132,7 @@
                </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                     class="external-link button is-normal is-rounded is-dark"
                     style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
@@ -128,10 +141,10 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark"
                    style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
@@ -140,7 +153,7 @@
                   </span>
                   <span>Datasets</span>
                   </a>
-              </span>
+              </span> -->
             </div>
 
           </div>
@@ -155,17 +168,19 @@
     <div class="hero-body">
       <!-- Input Image Pair Section -->
       <div class="input-image-pair has-text-centered" style="margin-bottom: 20px;">
-        <div style="display: flex; justify-content: center; gap: 20px;">
-          <img src="static/images/teaser_input_img_1.png" alt="Input Image 1" style="max-width: 45%; border: 1px solid #ccc; border-radius: 5px;">
-          <img src="static/images/teaser_input_img_2.png" alt="Input Image 2" style="max-width: 45%; border: 1px solid #ccc; border-radius: 5px;">
+        <div style="display: flex; justify-content: center; gap: 10px;">
+          <img src="static/images/teaser_input_img_1.png" alt="Input Image 1" style="max-width: 50%; border: 1px solid #ccc; border-radius: 5px;">
+          <img src="static/images/teaser_input_img_2.png" alt="Input Image 2" style="max-width: 50%; border: 1px solid #ccc; border-radius: 5px;">
         </div>
         <h3 class="subtitle" style="margin-top: 10px;">Input Image Pair</h3>
+         <!-- Video Section -->
+          <br>
+        <video id="teaser" autoplay muted loop playsinline controls width="110%">
+          <source src="static/videos/teaser.mp4" type="video/mp4">
+        </video>
       </div>
 
-      <!-- Video Section -->
-      <video id="teaser" autoplay muted loop playsinline controls width="100%">
-        <source src="static/videos/teaser.mp4" type="video/mp4">
-      </video>
+     
       <h2 class="subtitle has-text-centered">
         Given two images captured at distinct moments with unknown poses in a dynamic environment, <strong>DynSUP</strong> can fit dynamic Gaussian splatting and then synthesize a new image from a novel viewpoint at a different time.
       </h2>
@@ -193,21 +208,6 @@
     </div>
     <!--/ Abstract. -->
 
-<!-- <div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
-<img style='height: auto; width: 75%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
-</div>  -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/qtGsROYwdm4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -226,14 +226,14 @@
                   alt="teaser-fig."/>
 
         <div class="content has-text-justified">
-                    <p>
-                      <strong>Overview:</strong> Given two unposed images, we first perform Object-level Dense Bundle Adjustment to estimate initial camera poses and object motions by decomposing the scene into piece-wise rigid components. 
-                      The dense 3D Gaussian primitives are initialized with per-object SE(3) transformations. 
-                      In the SE(3) Field-driven 3DGS stage, we jointly optimize the camera poses, per-Gaussian SE(3) transformations, and Gaussian parameters to reconstruct the dynamic scene. 
-                      The optimized SE(3) field captures fine-grained motion details while maintaining temporal consistency. 
-                      Finally, the dynamic scene is rendered using the optimized camera poses and SE(3) field to generate high-quality novel-view synthesis results.
-                    </p>
-                    </div>
+          <p>
+            <strong>Overview:</strong> Given two unposed images, we first perform Object-level Dense Bundle Adjustment to estimate initial camera poses and object motions by decomposing the scene into piece-wise rigid components. 
+            The dense 3D Gaussian primitives are initialized with per-object SE(3) transformations. 
+            In the SE(3) Field-driven 3DGS stage, we jointly optimize the camera poses, per-Gaussian SE(3) transformations, and Gaussian parameters to reconstruct the dynamic scene. 
+            The optimized SE(3) field captures fine-grained motion details while maintaining temporal consistency. 
+            Finally, the dynamic scene is rendered using the optimized camera poses and SE(3) field to generate high-quality novel-view synthesis results.
+          </p>
+          </div>
 
       </div>
     </div>
@@ -242,71 +242,517 @@
 </section>
 
 <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Exp. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <h2 class="title is-3">Novel View Synthesis (Interpolation)</h2>
-          <div class="content has-text-justified">
-            <p>
-            Qualitative results for Novel View Synthesis on KITTI and Kubric datasets.
-            </p>
-          </div>
-  
+  <div class="container is-max-desktop">
+    <!-- Exp. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Novel View Synthesis (Interpolation)</h2>
+        <div class="content has-text-justified">
+          <p>
+            Qualitative results for Novel View Synthesis in the KITTI and Kubric datasets show that our method significantly outperforms baseline approaches for both real-world and synthetic scenes.
+          </p>
         </div>
       </div>
-      <!--/ Exp. -->
     </div>
+    <!--/ Exp. -->
+  </div>
 </section>
 
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/demo_kitti_1.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/demo_kitti_2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/demo_kitti_3.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-toby">
-            <video poster="" id="toby" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/demo_kubric_1.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-              <source src="static/videos/demo_kubric_2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-              <source src="static/videos/demo_kubric_3.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <!-- Single video items -->
+        <div class="item">
+          <video poster="" id="demo1" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kitti_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="demo2" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kitti_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="demo3" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kitti_3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="demo4" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kubric_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="demo5" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kubric_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="demo6" autoplay playsinline controls muted loop width="200%">
+            <source src="static/videos/demo_kubric_3.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
-  <section class="section">
+<section class="section">
+  <div class="container is-max-desktop ">
+    <div class=" has-text-centered">
+      <h2 class="title is-3">Visual Comparisons (KITTI)</h2>
+      <div class="content has-text-justified">
+        <p>
+
+        </p>
+      </div>
+      <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="column">
+          <div class="content">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+
+                <div id="example1" class="bal-container-small">
+
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_1/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:50%;">
+                    <div class="bal-before-inset" style="width: 100%;">
+                      <img src="./static/images/kitti_1/instantsplat.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <div id="example2" class="bal-container-small">
+
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_2/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:50.4968152866242%;">
+                    <div class="bal-before-inset" style="width:100%;">
+                      <img src="./static/images/kitti_2/instantsplat.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <div id="example3" class="bal-container-small">
+
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_3/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:50.4968152866242%;">
+                    <div class="bal-before-inset" style="width:100%;">
+                      <img src="./static/images/kitti_3/instantsplat.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!--/ Visual Effects. -->
+
+          <!-- Matting. -->
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+
+                <div id="example4" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_4/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:50%;">
+                    <div class="bal-before-inset" style="width: 100%;">
+                      <img src="./static/images/comparison_n/Ballroom/2dgs_normal.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <div id="example5" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_5/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:62.10191082802548%;">
+                    <div class="bal-before-inset" style="width: 100%;">
+                      <img src="./static/images/kitti_5/instantsplat.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50.10191082802548%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <div id="example6" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/kitti_6/dynsup.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      DynSUP (ours)
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:62.10191082802548%;">
+                    <div class="bal-before-inset" style="width: 100%;">
+                      <img src="./static/images/kitti_6/instantsplat.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        InstantSplat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:50.10191082802548%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<script>
+  new BeforeAfter({
+    id: '#example1'
+  });
+  new BeforeAfter({
+    id: '#example2'
+  });
+  new BeforeAfter({
+    id: '#example3'
+  });
+  new BeforeAfter({
+      id: '#example4'
+    });
+  new BeforeAfter({
+    id: '#example5'
+  });
+  new BeforeAfter({
+    id: '#example6'
+  });
+</script>
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop ">
+    <div class=" has-text-centered">
+      <h2 class="title is-3">Visual Comparisons (Kubric)</h2>
+      <div class="content has-text-justified">
+        <p>
+
+        </p>
+      </div>
+      <div class="columns is-centered">
+          <p>
+            <div id="example1-kubric" class="bal-container-kubric">
+
+              <div class="bal-after">
+                <img src="./static/images/kubric_1/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:50%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_1/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+            <div id="example2-kubric" class="bal-container-kubric">
+
+              <div class="bal-after">
+                <img src="./static/images/kubric_2/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:50.4968152866242%;">
+                <div class="bal-before-inset" style="width:100%;">
+                  <img src="./static/images/kubric_2/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>      
+            <div id="example3-kubric" class="bal-container-kubric">
+
+              <div class="bal-after">
+                <img src="./static/images/kubric_3/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:50.4968152866242%;">
+                <div class="bal-before-inset" style="width:100%;">
+                  <img src="./static/images/kubric_3/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+            <div id="example4-kubric" class="bal-container-kubric">
+              <div class="bal-after">
+                <img src="./static/images/kubric_4/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:50%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_4/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>    
+          </p>
+      </div>
+      <div class="columns is-centered">
+          <!-- Matting. -->
+          <p>
+            <div id="example5-kubric" class="bal-container-kubric">
+              <div class="bal-after">
+                <img src="./static/images/kubric_5/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:62.10191082802548%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_5/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat  
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50.10191082802548%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+            <div id="example6-kubric" class="bal-container-kubric">
+              <div class="bal-after">
+                <img src="./static/images/kubric_6/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:62.10191082802548%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_6/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50.10191082802548%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+            <div id="example7-kubric" class="bal-container-kubric">
+              <div class="bal-after">
+                <img src="./static/images/kubric_7/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:62.10191082802548%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_7/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50.10191082802548%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+            <div id="example8-kubric" class="bal-container-kubric">
+              <div class="bal-after">
+                <img src="./static/images/kubric_8/dynsup.png">
+                <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                  DynSUP (ours)
+                </div>
+              </div>
+
+              <div class="bal-before" style="width:62.10191082802548%;">
+                <div class="bal-before-inset" style="width: 100%;">
+                  <img src="./static/images/kubric_8/instantsplat.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    InstantSplat
+                  </div>
+                </div>
+              </div>
+
+              <div class="bal-handle" style="left:50.10191082802548%;">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+
+            </div>
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  new BeforeAfter({
+    id: '#example1-kubric'
+  });
+  new BeforeAfter({
+    id: '#example2-kubric'
+  });
+  new BeforeAfter({
+    id: '#example3-kubric'
+  });
+  new BeforeAfter({
+      id:'#example4-kubric'
+    });
+  new BeforeAfter({
+    id: '#example5-kubric'
+  });
+  new BeforeAfter({
+    id: '#example6-kubric'
+  });
+  new BeforeAfter({
+    id: '#example7-kubric'
+  });
+  new BeforeAfter({
+    id: '#example8-kubric'
+  });
+</script>
+
+
+
+<section class="section">
     <div class="container is-max-desktop">
       <!-- Exp. -->
       <div class="columns is-centered has-text-centered">
@@ -314,7 +760,7 @@
           <h2 class="title is-3">Novel View Synthesis (Extrapolation)</h2>
           <div class="content has-text-justified">
             <p>
-            Visualization of our method with Novel View Synthesis (Extrapolation).
+              Visualization of our method with Novel View Synthesis (Extrapolation). Our method can generate high-quality novel views by extrapolating both camera motion and object motions with dynamic scenes.
             </p>
           </div>
   
@@ -353,7 +799,7 @@
         <h2 class="title is-3">Object-level Editing</h2>
         <div class="content has-text-justified">
           <p>
-            Visual demonstration of object-level editing.
+            Visual demonstration of object-level editing. By treating each object as an independent entity with its motion transformation, our approach can control the motion of each object with the dynamic scene.
           </p>
         </div>
 
@@ -430,6 +876,16 @@
     </div>
 </footer>
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="static/css/bootstrap.min.js"></script>
+  <!-- <script src="/js/offcanvas.js"></script> -->
+  <script src="static/css/jquery.event.move.js"></script>
+  <script src="static/css/jquery.twentytwenty.js"></script>
+
+  <script>
+    $(window).load(function () { $(".twentytwenty-container").twentytwenty({ default_offset_pct: 0.5 }); });
+  </script>
 
 </body>
 </html>
