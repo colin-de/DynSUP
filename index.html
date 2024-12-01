@@ -48,6 +48,9 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="./static/js/script.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   <meta property="og:url" content="https://https://colin-de.github.io/DynSUP/" />
   <meta property="og:title" content="DynSUP" />
 </head>
@@ -123,8 +126,8 @@
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/colin-de/DynSUP"
-                class="external-link button is-normal is-rounded is-dark">
-                <!-- style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;"> -->
+                class="external-link button is-normal is-rounded is-dark"
+                style="background-color: #f0f0f0; color: #aaa; pointer-events: none; cursor: not-allowed;">
                <span class="icon">
                    <i class="fab fa-github"></i>
                </span>
@@ -249,7 +252,8 @@
         <h2 class="title is-3">Novel View Synthesis (Interpolation)</h2>
         <div class="content has-text-justified">
           <p>
-            Qualitative results for Novel View Synthesis in the KITTI and Kubric datasets show that our method significantly outperforms baseline approaches for both real-world and synthetic scenes.
+            Qualitative comparison results for novel view synthesis on the KITTI and Kubric datasets. We generate <strong> novel view images at new timestamps </strong> using camera pose interpolation and object motion interpolation. 
+            Our method significantly outperforms baseline approaches in rendering quality.
           </p>
         </div>
       </div>
@@ -753,22 +757,22 @@
 
 
 <section class="section">
-    <div class="container is-max-desktop">
+  <div class="container is-max-desktop">
       <!-- Exp. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <h2 class="title is-3">Novel View Synthesis (Extrapolation)</h2>
-          <div class="content has-text-justified">
-            <p>
-              Visualization of our method with Novel View Synthesis (Extrapolation). Our method can generate high-quality novel views by extrapolating both camera motion and object motions with dynamic scenes.
-            </p>
+          <div class="column">
+              <h2 class="title is-3">Novel View Synthesis (Extrapolation)</h2>
+              <div class="content has-text-justified">
+                  <p>
+                      Visualization of our method applied to novel view synthesis via extrapolation. Given input images at \( t_1 \) and \( t_2 \), our approach renders novel view images outside the given time window (e.g., \( t_0 \to t_1 \), \( t_2 \to t_3 \)). This is achieved through explicit modeling of both camera motion and object motion.
+                  </p>
+              </div>
           </div>
-  
-        </div>
       </div>
       <!--/ Exp. -->
-    </div>
+  </div>
 </section>
+
 
 <section class="hero">
   <div class="hero-body">
@@ -799,7 +803,9 @@
         <h2 class="title is-3">Object-level Editing</h2>
         <div class="content has-text-justified">
           <p>
-            Visual demonstration of object-level editing. By treating each object as an independent entity with its motion transformation, our approach can control the motion of each object with the dynamic scene.
+            Visualization of the application of our method to object-level editing. 
+            By recovering the motion, geometry, and appearance of individual objects, we enable independent control of object motion. 
+            This allows for novel view rendering by selectively moving specific objects.
           </p>
         </div>
 
